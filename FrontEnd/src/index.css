@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.order-last ion-icon {
+  margin: 10px;
+  padding-top: 40px;
+  font-size: 40px;
+}
+.d-flex {
+  padding-left: 330px;
+  width: 70%;
+  padding-top: 50px;
+}
+h3 {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+.ui h5 {
+  color: white;
+  padding: 5px;
+  background-color: rgba(84, 112, 124, 0.559);
+}
+marquee {
+  color: rgb(230, 132, 47);
+}
+.box-chat::-webkit-scrollbar{
+  display: none;
+}
