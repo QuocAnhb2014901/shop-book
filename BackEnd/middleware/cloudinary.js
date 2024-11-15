@@ -13,7 +13,7 @@ const storage = new CloudinaryStorage({
   cloudinary,
   allowedFormats: ["jpg", "png", "jpeg"],
   params: {
-    folder: "vaccine",
+    folder: "Tiệm sách Nami",
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);

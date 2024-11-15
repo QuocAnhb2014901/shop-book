@@ -172,11 +172,13 @@ function PayVaccines() {
               amount={getTotal().totalPriceUsd}
             />
           </div>
+          
+          <h2 className="text-2xl font-bold mb-4">Thanh toán khi đặt hàng</h2>
           <button
             onClick={handlePay}
-            className="inline-flex items-center justify-center px-8 py-4 font-sans font-semibold tracking-wide text-white bg-blue-500 rounded-lg h-[60px]"
+            className="inline-flex items-center justify-center px-8 py-4 font-sans font-semibold tracking-wide text-white bg-blue-500 rounded-lg h-[60px] w-full"
           >
-            Thanh toán
+         Đặt hàng
           </button>
         </div>
       </div>

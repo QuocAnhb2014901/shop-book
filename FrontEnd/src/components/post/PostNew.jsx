@@ -3,7 +3,7 @@ import React from 'react';
 const PostNew = () => {
   return (
     <div>
-      <div className="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" >
+      {/* <div className="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" >
         <div className="container py-5">
             <div className="row justify-content-center">
                 <div className="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
@@ -18,7 +18,7 @@ const PostNew = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     </div>
   );
 };

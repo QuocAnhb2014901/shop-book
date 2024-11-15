@@ -12,65 +12,69 @@ const Banner = () => {
           <div className="carousel-item active">
             <img
               className="w-100"
-              src="https://bizweb.dktcdn.net/100/494/200/themes/918976/assets/slider_2.jpg?1712645470838"
+              src="https://sachgiaokhoa.vn/pub/media/magiccart/magicslider/mobile/s/a/sach_on_thi_vao_10_quang_loi_web.jpg"
               alt="Image"
             />
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: "900px" }}>
-                <h5 className="text-white text-uppercase mb-3 animated slideInDown fw-bold" style={{ color: 'white', textShadow: '2px 2px 5px red' }}>
-                  Hãy trân trọng sức khỏe của bạn
-                </h5>
-                <h1 className="display-1 text-dark mb-md-4 animated zoomIn fw-bold" style={{ color: 'white', textShadow: '2px 2px 5px red' }}>
-                  HÃY TIÊM PHÒNG VẮC-XIN NGAY HÔM NAY
-                </h1>
-                <a
+                <h5
+                  className="text-white text-uppercase mb-3 animated slideInDown fw-bold"
+                  style={{ color: "white", textShadow: "2px 2px 5px red" }}
+                ></h5>
+                <h1
+                  className="display-1 text-dark mb-md-4 animated zoomIn fw-bold"
+                  style={{ color: "white", textShadow: "2px 2px 5px red" }}
+                ></h1>
+                {/* <a
                   href="/RegisterVaccination"
                   className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                 >
-                  Đăng Ký Ngay
+                  Mua Ngay
                 </a>
                 <a
                   href=""
                   className="btn btn-secondary py-md-3 px-md-5 animated slideInRight pd-10"
                 >
                   Liên Hệ Ngay
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
           <div className="carousel-item active">
             <img
               className="w-100"
-              src="https://bizweb.dktcdn.net/100/494/200/themes/918976/assets/slider_2.jpg?1712645470838"
+              src="https://sachgiaokhoa.vn/pub/media/magiccart/magicslider/mobile/s/a/sach_on_thi_vao_10_quang_loi_web.jpg"
               alt="Image"
             />
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: "900px" }}>
-                <h5 className="text-white text-uppercase mb-3 animated slideInDown fw-bold" style={{ color: 'white', textShadow: '2px 2px 5px red' }}>
-                  Hãy trân trọng sức khỏe của bạn
-                </h5>
-                <h1 className="display-1 text-white mb-md-4 animated zoomIn fw-bold" style={{ color: 'white', textShadow: '2px 2px 5px red' }}>
-                  CHÚNG TÔI LUÔN SẴN SÀNG PHỤC VỤ BẠN 
-                </h1>
-                <a
+                <h5
+                  className="text-white text-uppercase mb-3 animated slideInDown fw-bold"
+                  style={{ color: "white", textShadow: "2px 2px 5px red" }}
+                ></h5>
+                <h1
+                  className="display-1 text-white mb-md-4 animated zoomIn fw-bold"
+                  style={{ color: "white", textShadow: "2px 2px 5px red" }}
+                ></h1>
+                {/* <a
                   href="/RegisterVaccination"
                   className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                 >
-                  Đăng Ký Ngay
+                  Mua Ngay
                 </a>
                 <a
                   href=""
                   className="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
                 >
                   Liên Hệ Ngay
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
         </div>
       </div>
       <button
-      style={{marginTop:"-100px",position:"absolute"}}
+        style={{ marginTop: "-100px", position: "absolute" }}
         className="carousel-control-prev"
         type="button"
         data-bs-target="#header-carousel"
@@ -80,7 +84,7 @@ const Banner = () => {
         <span className="visually-hidden">Previous</span>
       </button>
       <button
-      style={{marginTop:"-100px",position:"absolute"}}
+        style={{ marginTop: "-100px", position: "absolute" }}
         className="carousel-control-next"
         type="button"
         data-bs-target="#header-carousel"

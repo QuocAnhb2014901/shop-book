@@ -43,9 +43,9 @@ const Message = () => {
             </div>
             <div className="">
               <Link to="/messToPhone">
-                <button className="rounded-lg font-medium bg-blue-100 text-blue-500 hover:bg-slate-200 px-6 py-3 mt-[-39px] float-right">
+                {/* <button className="rounded-lg font-medium bg-blue-100 text-blue-500 hover:bg-slate-200 px-6 py-3 mt-[-39px] float-right">
                   Nhắn tin qua số điện thoại
-                </button>
+                </button> */}
               </Link>
             </div>
           </div>

@@ -3,13 +3,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+
 import { login } from "../redux/authSlice";
 import { useState } from "react";
 
 const schema = yup.object().shape({
   email: yup.string().email().required("Vui lòng nhập email!"),
-  password: yup.string().min(6).max(20).required("Vui lòng nhập mật khẩu!"),
+  password: yup.string().required("Vui lòng nhập mật khẩu!"),
 });
 
 const SignIn = () => {
@@ -30,14 +30,10 @@ const SignIn = () => {
     try {
       dispatch(login(data));
     } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Đăng nhập thất bại.",
-        text: error.response.data.message,
-      });
+      console.log(error)
     }
   };
-
+  
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };

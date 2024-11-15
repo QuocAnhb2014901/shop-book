@@ -71,7 +71,7 @@ const EditVaccin = () => {
         icon: "success",
         confirmButtonText: "OK"
       }).then(() => {
-        navigate("/admin/vaccines");
+        navigate("/VaccineManagement");
       });
     });
   };
@@ -124,13 +124,15 @@ const EditVaccin = () => {
             </div>
             <div className="mb-4">
               <label htmlFor="size" className="text-lg text-gray-600">
-                Chọn Size:
+                Chọn Tập:
               </label>
               <div className="flex flex-wrap gap-2 mt-2">
-                {["S", "M", "L", "XL"].map((size) => (
+                {["Tập 1", "Tập 2"].map((size) => (
                   <div
                     key={size}
-                    className={`border p-2 cursor-pointer size-item ${selectedSize.includes(size) ? 'border-primary' : ''}`}
+                    className={`border p-2 cursor-pointer size-item ${
+                      selectedSize.includes(size) ? "border-primary" : ""
+                    }`}
                     onClick={() => handleToggleSize(size)}
                   >
                     {size}
@@ -186,10 +188,7 @@ const EditVaccin = () => {
               />
               <p className="text-red-500 mt-1">{errors.description?.message}</p>
             </div>
-            <button
-              className="h-10 w-20 rounded-sm bg-slate-200"
-              type="submit"
-            >
+            <button className="h-10 w-20 rounded-sm bg-slate-200" type="submit">
               Cập nhật
             </button>
           </form>

@@ -20,6 +20,7 @@ const ForgotPassword = () => {
           title: "Hoàn thành",
           text: "Đã gửi về email thành công",
         });
+        setEmail(""); 
       } else {
         Swal.fire({
           icon: "error",

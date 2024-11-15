@@ -23,7 +23,23 @@ function VaccinesDetail() {
   const [error, setError] = useState("");
 
   const commentList = useSelector((state) => state.comment.comment);
-
+  
+  const handleAddComment = (comment) => {
+    if (!auth.currentUser) {
+      navigate("/login");
+      return null;
+    }else{
+    const data = {
+      user_id: userId,
+      vaccine_id: id,
+      content: comment,
+    };
+    dispatch(addComment(data));
+    }
+}
+  const handleDeleteComment = (id) => {
+    dispatch(deleteCommentByAuthor(id));
+  };
   useEffect(() => {
     dispatch(getVaccineById(id));
     dispatch(getCommentByVaccineId(id));
@@ -35,6 +51,7 @@ function VaccinesDetail() {
   };
 
   const navigate = useNavigate();
+
 
   const handleAddToCart = () => {
     if (!selectedSize) {
@@ -87,7 +104,7 @@ function VaccinesDetail() {
             src={vaccine.image}
             alt={vaccine.name}
             className="img-fluid"
-            style={{ borderRadius: "5px", border: "1px solid #ddd", height: "auto", marginLeft: "120px" }}
+            style={{ borderRadius: "5px", border: "1px solid #ddd", height: "50%", marginLeft: "120px" }}
           />
         </div>
         <div className="col-md-6">
@@ -95,7 +112,7 @@ function VaccinesDetail() {
           <h2 className="text-danger">{formatPrice(vaccine.price)} VNĐ</h2>
           <p className="lead" dangerouslySetInnerHTML={{ __html: vaccine.description }}></p>
           <div className="mb-4">
-            <strong>Kích cỡ: </strong>
+            <strong>cHỌN TẬP: </strong>
             {vaccine?.size?.map((size) => (
               <span
                 key={size}

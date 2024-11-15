@@ -37,7 +37,7 @@ const Header = () => {
               <div className="me-3 pe-3 border-end py-2">
                 <p className="m-0">
                   <i className="fa fa-envelope-open me-2"></i>
-                  shopdothethao@gmail.com
+                  bookstore@gmail.com
                 </p>
               </div>
               <div className="py-2">

@@ -19,7 +19,7 @@ const TABLE_HEAD = [
   "Hình Ảnh",
   "Tên",
   "Giá",
-  "Size",
+  "Tập",
   "MÔ tả",
   "Ngày Tạo",
   "Ngày Sửa",

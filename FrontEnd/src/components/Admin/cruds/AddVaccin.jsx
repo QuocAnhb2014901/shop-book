@@ -19,7 +19,7 @@ const schema = yup.object().shape({
 const Addvaccin = () => {
   const [imageUpload, setImageUpload] = useState("");
   const [description, setDescription] = useState("");
-  const availableSizes = ["S", "M", "L", "XL"];
+  const availableSizes = ["Tập 1", "Tập 2"];
   const [selectedSize, setSelectedSize] = useState([]);
   const isLoading = useSelector((state) => state.vaccine.isLoading);
   const {
@@ -129,8 +129,8 @@ const Addvaccin = () => {
               ))}
             </div> */}
             <div className="flex gap-2 items-center mt-2">
-            <label htmlFor="name" className="text-sm text-gray-600">
-               Chọn Size:
+              <label htmlFor="name" className="text-sm text-gray-600">
+                Chọn Tập:
               </label>
               {selectedSize.map((size) => (
                 <div
@@ -144,20 +144,20 @@ const Addvaccin = () => {
             <div className="flex gap-2 items-center mt-2">
               <button
                 type="button"
-                onClick={() => handleAddSize("S")}
+                onClick={() => handleAddSize("Tập 1")}
                 className="border p-2 cursor-pointer size-item"
               >
-                Thêm S
+                Thêm Tập 1
               </button>
-              <button type="button" onClick={() => handleAddSize("M")}>
-                Thêm M
+              <button type="button" onClick={() => handleAddSize("Tập 2")}>
+                Thêm Tập 2
               </button>
-              <button type="button" onClick={() => handleAddSize("L")}>
+              {/* <button type="button" onClick={() => handleAddSize("L")}>
                 Thêm L
               </button>
               <button type="button" onClick={() => handleAddSize("XL")}>
                 Thêm XL
-              </button>
+              </button> */}
             </div>
 
             <div className="mb-4">
@@ -166,8 +166,10 @@ const Addvaccin = () => {
                 Danh muc
               </label>
               <select
-              className="w-full border border-gray-300 rounded-lg py-2 px-3 outline-none bg-transparent focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-              name="category" {...register("category")}>
+                className="w-full border border-gray-300 rounded-lg py-2 px-3 outline-none bg-transparent focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                name="category"
+                {...register("category")}
+              >
                 {category.map((item) => (
                   <option key={item._id} value={item._id}>
                     {item.name}
@@ -207,7 +209,6 @@ const Addvaccin = () => {
               />
               <p className="text-red-500 mt-1">{errors.description?.message}</p>
             </div>
-    
 
             <button className="block w-full h-10 bg-blue-800 text-white rounded-md">
               Thêm
